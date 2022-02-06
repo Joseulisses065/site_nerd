@@ -1,0 +1,602 @@
+@font-face {
+    font-family: 'iceland';
+    src: url('fontes/Iceland/Iceland-Regular.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'icebarg';
+    src: url('fontes/Iceberg/Iceberg-Regular.ttf') format('truetype');
+}
+/*
+------------------------------------------------------------
+ESTILO GERAL
+------------------------------------------------------------
+*/
+
+* {
+    border: 0px;
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    
+    
+}
+h1,h2,h3,h4{
+    font-family:"Icebarg";
+}
+body::-webkit-scrollbar{
+    width: 0px;
+    background-color: transparent;
+}
+
+main {
+    transition: all 0.6s;
+}
+a{
+    color: #fff;
+}
+p{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue';
+}
+
+
+
+/*
+------------------------------------------------------------
+HEADER
+------------------------------------------------------------
+*/
+
+header {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    height: 60px;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    font-family: "icebarg";
+}
+
+.lista-op {
+    display: flex;
+    width: 30vw;
+    justify-content: space-around;
+    transition: all 0.6s;
+}
+
+.lista-op>li {
+    transition: all 0.6s;
+    cursor: pointer;
+}
+
+.lista-op>li:hover {
+    opacity: 50%;
+}
+
+.logo>a>img {
+    height: 50px;
+}
+
+.bar {
+    width: 40px;
+    height: 20px;
+    background-color: white;
+    border-radius: 20px;
+    position: relative;
+}
+
+.ball {
+    position: absolute;
+    background-color: rgb(238, 234, 234);
+    border-radius: 100%;
+    height: 20px;
+    width: 20px;
+    top: 0;
+    box-shadow: 1px 1px 2px black;
+    transition: all 0.6s;
+}
+
+#check_2 {
+    display: none;
+}
+
+.pesquisa {
+    border-radius: 20px;
+    padding: 5px;
+}
+
+.linha {
+    width: 40px;
+    height: 7px;
+    background-color: white;
+    border-radius: 7px;
+    margin-bottom: 5px;
+}
+
+#check {
+    display: none;
+}
+
+.menu {
+    display: none;
+    transition: all 0.6s;
+}
+
+.logo {
+    align-items: center;
+}
+
+
+
+/*
+------------------------------------------------------------
+MAIN
+------------------------------------------------------------
+*/
+
+
+.banner {
+
+    min-height:400px;
+    height: 60VH;
+    background-color: red;
+    background: url("../IMG/hero.jpg") no-repeat center;
+    background-size: cover;
+    position: relative;
+}
+
+.txt-banner {
+    width: 100%;
+    min-height:400px;
+    height: 60VH;
+    background-color: rgba(41, 39, 39, 0.363);
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+.txt-banner>div {
+    padding: 20px;
+    width: 50%;
+    
+}
+
+.btn-leia {
+    background-color: rgb(0, 89, 255);
+    padding: 10px;
+    width: 200px;
+    border-radius: 20px;
+    border: 1px solid white;
+    margin-top: 10px;
+    cursor: pointer;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-family: "icebarg";
+    margin-top:20px;
+    
+    
+}
+
+.xt-mais>p{
+        font-size:x-large;
+    }
+/*artigo*/
+.contein-maisvistos>div:nth-child(n+2){
+    padding: 0px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+}
+.banner-artigo{
+    width: 80%;
+    margin: 20px auto 20px auto;
+}
+.txt-artigo{
+    
+    width: 80%;
+    margin: auto auto 20px auto;
+
+}
+.txt-artigo>h1{
+    margin: 20px 0PX 0PX 0PX;
+    font-size: xx-large;
+    
+
+}
+.txt-artigo>h2{
+    text-align: left;
+    
+    
+
+}
+.txt-artigo>hr{
+  background-color: black;
+  margin: auto auto 20px auto;
+  height: 2PX;
+
+}
+.banner-artigo>img{
+    width: 100%;
+    height: 50vh;
+}
+.txt-artigo>p{
+    text-align: justify;
+    text-indent: 50px;
+    margin-bottom: 20px;
+    font-size:large
+
+}
+.mais-vistos-artigo>div{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 20px;
+    
+}
+
+
+/*artigo*/
+
+
+.contein-cards {
+    padding: 30px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 10px;
+    
+    
+}
+
+
+
+.contein-cards>div {
+    display: grid;
+    grid-gap: 10px;
+    display: flex;
+    flex-direction: column;
+    
+
+    
+}
+.img-card{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.mais-vistos>div:nth-child(n){
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    padding: 10px;
+
+    margin: auto;
+    min-width: 400px;
+    grid-gap:10px;
+}
+.novidades>div:nth-child(n){
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    padding: 10px;
+    margin: auto;
+    min-width: 400px;
+    grid-gap:10px
+}
+.atb{
+    display: flex;
+    justify-content: space-between;
+
+    
+}
+.atb>h4{
+margin-right: 20px;
+    
+    
+}
+h2{
+    text-align: center;
+    max-height: 30px;
+}
+.propaganda{
+    padding:40px;
+}
+.propaganda>a>img{
+    width: 100%;
+    height: 130px;
+    
+}
+.slides{
+    width: 400%;
+    display: flex;
+    transition: all 0.6s;
+    
+    
+    
+}
+
+.slide a img{
+    width: 100vw;
+    height: 100%;
+
+}
+
+.slides>input{
+    display: none;
+}
+
+.nav-ball{
+    border: 2px solid white;
+    width:5vw;
+    height:3vh;
+    margin-right:20px;
+    border-radius: 20px;
+    transition: all 0.6s;
+}
+.nav-ball:hover{
+    background-color:white;
+}
+.carrosel-conteiner{
+    width:100%;
+    height: 600px;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    
+    
+}
+.navegacao{
+    display: flex;
+    position: absolute;
+    width: 100%;
+    bottom:10%;
+   justify-content:center;
+   transition: all 0.6s;
+}
+#r1:checked ~ .s1{
+    margin-left:0vw;
+    transition: all 0.6s;
+}
+
+#r2:checked ~ .s1{
+    margin-left:-100vw;
+    transition: all 0.6s;
+}
+
+#r3:checked ~ .s1{
+    margin-left:-200vw;
+    transition: all 0.6s;
+}
+
+#r4:checked ~ .s1{
+    margin-left:-300vw;
+    transition: all 0.6s;
+}
+.carrossel-baixo h2{
+    margin-bottom: 20px;
+}
+main section:nth-child(n+2){
+    margin-top:10px;
+    padding: 20px;
+}
+#nb-1{
+    background-color:white;
+}
+
+
+/*
+------------------------------------------------------------
+FOOTER
+------------------------------------------------------------
+*/
+footer{
+    padding:20px;
+    margin-top:40px;
+    background-color: black;
+    color: white;
+}
+footer h1{
+    text-align:center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+footer>div:nth-child(n){
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 20px;
+    padding:20px;
+    margin-top:40px;
+    color: white;
+}
+
+ hr{
+        background-color: white;
+        width: 100%;
+        height:5px;
+    }
+.icon-rede{
+    width: 32px;
+    margin-right: 10px;
+}
+.icon-rede>img{
+    width: 32px;
+}
+
+.redes-lista>li>a{
+    display: flex;
+    justify-content: center;
+    
+}
+.redes-lista{
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+}
+    
+/*
+------------------------------------------------------------
+MIDIA QUERY
+-----------------------------------------------------------
+*/
+
+@media only screen and (max-width: 968px) {
+    .menu {
+        display: block;
+        
+    }
+    .xt-mais>p{
+        font-size: axis;
+    }
+    .bl-menu{
+        transition: all 0.6s;
+    }
+    .lista-op {
+        position: absolute;
+        right: -100%;
+    }
+    .txt-banner {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .txt-banner>div {
+        margin-top: 10%;
+        padding: 10px;
+        width: 100%;
+    }
+   
+    .btn-leia {
+        width: 200px;
+        text-align: center;
+        
+    }
+    .mais-vistos>div:nth-child(n){
+        display: block;
+        min-width: 100%;
+        
+      
+    }
+    .novidades>div:nth-child(n){
+        display: block;
+        min-width: 100%;
+        
+    }
+    .contein-cards {
+        display: block;
+        padding: 0px;
+        
+        
+    }
+
+
+    #r1:checked ~ .s1{
+        margin-left:0vw;
+        transition: all 0.6s;
+    }
+    #r2:checked ~ .s1{
+        margin-left:-98vw;
+        transition: all 0.6s;
+    }
+    
+    #r3:checked ~ .s1{
+        margin-left:-196vw;
+        transition: all 0.6s;
+    }
+    
+    #r4:checked ~ .s1{
+        margin-left:-294vw;
+        transition: all 0.6s;
+    }
+
+    .carrosel-conteiner{
+        width:98%;
+        height: 30%;
+        margin: auto;
+        overflow: hidden;
+        position: relative;
+        
+        
+    }
+    .slide a img{
+        width: 98vw;
+        height:100%;
+    
+    }
+    main section:nth-child(n+2){
+        margin-top:10px;
+        padding: 0px;
+    }
+    .xt>p{
+        font-size: x-large;
+    }
+    
+
+    footer{
+        display:block;
+        grid-template-columns: repeat(2,1fr);
+        grid-gap: 20px;
+        padding:20px;
+        margin-top:40px;
+        background-color: black;
+        color: white;
+        text-align:justify;
+
+    }
+    footer h1{
+        text-align: center;
+        
+    }
+    footer>div:nth-child(n){
+        display:block;
+    }
+    .redes-lista{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        justify-content: space-around;
+        
+    }
+    .contein-maisvistos>div:nth-child(n+2){
+        display: block;
+        
+    }
+    .banner-artigo{
+        width: 95%;
+        margin: 10px auto 20px auto;
+    }
+    .txt-artigo{
+    
+        width: 90%;
+        margin: auto auto 20px auto;
+    
+    }
+    .txt-artigo>p{
+        text-indent: 50px;
+        font-size: medium;
+        margin-bottom: 20px;
+        
+    
+    }
+    .txt-artigo>h1{
+        text-align: justify;
+        margin-bottom: 20px;
+    
+    }
+    .banner-artigo>img{
+        width: 100%;
+        height: 50vh;
+    }
+    .mais-vistos-artigo>div{
+        display: block;
+        margin:0px auto 20px auto; 
+        
+    }
+    .contein-maisvistos>div:nth-child(n+2){
+        padding: 10px;
+    }
+    
+}

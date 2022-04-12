@@ -26,7 +26,7 @@
 
             </div>
             <div class="txt-artigo">
-                <h1>Lorem, ipsum dolor sit amet consectetur</h1>
+                <h1>ulisses, ipsum dolor sit amet consectetur</h1>
                 <hr>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione blanditiis suscipit nihil aliquid magnam recusandae iure vel at molestiae accusantium ea laudantium expedita corrupti distinctio, excepturi eos nam repellat inventore?Lorem, ipsum dolor sit amet consectetur</p>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione blanditiis suscipit nihil aliquid magnam recusandae iure vel at molestiae accusantium ea laudantium expedita corrupti distinctio, excepturi eos nam repellat inventore?Lorem, ipsum dolor sit amet consecteturLorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione blanditiis suscipit nihil aliquid magnam recusandae iure vel at molestiae accusantium ea laudantium expedita corrupti distinctio, excepturi eos nam repellat inventore?Lorem, ipsum dolor sit amet consectetur</p>
